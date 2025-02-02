@@ -60,10 +60,8 @@ img {
   border-bottom: 3px solid #9970ab;
 }
 
-.first-letter {
-  font-size: 55px;
-  line-height: 55px;
-  float: left;
+#categorySelect {
+  margin-top: -20px;
 }
 
 /* When it's less than 700 pixels wide, do normal scrollytelling */
