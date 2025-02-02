@@ -1,0 +1,97 @@
+html,
+body {
+  font: 'Roboto';
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+a {
+  color: #212529;
+  text-decoration: underline;
+}
+
+.top-image-container {
+  position: relative;
+  text-align: center;
+}
+
+img {
+  width: 30%;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+.title {
+  text-align: center !important;
+  justify-content: center;
+  position: relative;
+  margin-bottom: auto;
+  color: #333333;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.byline {
+  text-align: center !important;
+  justify-content: center;
+  position: relative;
+  margin-bottom: auto;
+  color: #333333;
+  font-size: 16px;
+}
+
+.caption {
+  font-size: 11px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.gain {
+  border-bottom: 3px solid #5aae61;
+}
+
+.lose {
+  border-bottom: 3px solid #9970ab;
+}
+
+.first-letter {
+  font-size: 55px;
+  line-height: 55px;
+  float: left;
+}
+
+/* When it's less than 700 pixels wide, do normal scrollytelling */
+
+/* @media only screen and (min-width: 600px) { */
+/* When it's less than 500 pixels wide */
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  .title {
+    text-align: center !important;
+    justify-content: center;
+    position: relative;
+    margin-bottom: auto;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .byline {
+    text-align: center !important;
+    justify-content: center;
+    position: relative;
+    color: #333333;
+    font-size: 14px;
+    background: #ffffff;
+  }
+}
