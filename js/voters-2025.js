@@ -88,6 +88,7 @@ function updateChart(data, selectedCategory) {
             .tickSize(0)
             .tickFormat(d => formatNumber(d)))
         .style("font-size", axisFontSize)
+        .style("font-family", "Roboto")
         .select(".domain").remove();
     
     const yAxis = svg.append("g")
@@ -98,7 +99,7 @@ function updateChart(data, selectedCategory) {
         .call(d3.axisLeft(y)
         .tickSize(0)
         .tickPadding(20)
-        .ticks(5))
+        .ticks(4))
         .selectAll('path')
         .style("stroke-width", "0px");
     
@@ -226,10 +227,12 @@ style.textContent = `
     @media (max-width: 768px) {
         .x-axis text {
             font-size: 12px;
+            font-family: "Roboto";
         }
         
         .y-axis text {
             font-size: 12px;
+            font-family: "Roboto";
         }
     }
 `;
